@@ -1,0 +1,34 @@
+.started {
+  padding: $pd-8 0;
+  .started__content {
+    max-width: 890px;
+    margin: 0 auto;
+    border-radius: $border-radius-2;
+    background-color: #eee;
+    text-align: center;
+    padding: $pd-7 + 5 $pd-2;
+    position: relative;
+    .started__capption {
+      margin-bottom: $mr-1 !important;
+    }
+
+    .started__description {
+      display: inline-block;
+      @include styleText($violet, $font-size-html, $font-weight-300, $lh-1);
+      margin-bottom: $mr-2;
+      max-width: 250px;
+      margin-bottom: $mr-4;
+    }
+    .started__comment {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+    }
+    .started__smile {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(32%, -22%);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.work {
+  padding: $pd-8 0;
+  &__content {
+    @include boderText($pd-5, $pd-4, $gray-light, $border-radius-1);
+    align-items: center;
+    text-align: center;
+    &:hover {
+      border-color: transparent;
+      box-shadow: 0 0 50px 10px rgba(black, 0.03);
+    }
+  }
+  &__img {
+    display: inline-block;
+    margin-bottom: $mr-3;
+    max-height: 115px;
+  }
+  &__title {
+    @include styleText($gray-dark, $fs-4, $font-weight-600, $lh-2);
+    margin-bottom: $mr-2;
+  }
+  &__description {
+    display: inline-block;
+    @include styleText($gray, $font-size-html, $font-weight-300, $lh-1);
+    margin-bottom: $mr-2;
+  }
+  &__more {
+    transition: all 0.2s linear;
+  }
+  &__content:hover .work__more {
+    @include hoverButton($color-white, $primary-color, $primary-color);
+  }
+}

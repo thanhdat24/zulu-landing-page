@@ -1,0 +1,48 @@
+.footer{
+    padding: $pd-7 0;   
+    .footer__logo{
+        padding-bottom: $pd-7;
+    }
+    .footer__content{
+        padding-bottom: $pd-5;
+        max-width: 250px;
+        p{
+            @include styleText($violet,$fs-2,$font-weight-600,$lh-2);
+        }
+    }
+    .footer__icon{
+        display: flex; 
+        .footer__social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 45px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            @include styleText($color-white,$fs-3,none,none);
+        }     
+        .google{            
+            background-color: $pink-1;                 
+        }
+        .twitter{         
+            background-color: $primary-color;                    
+             margin:0 10px;
+        }
+        .instagram{         
+            background-color: $orange;                        
+        }
+        
+    }
+    .footer__name{           
+            @include styleText($violet,$fs-3,$font-weight-bold,$lh-2);
+        }
+    .footer__text{
+        margin-top: $mr-2;
+        a{@include styleText($violet,$fs-2,$font-weight-600,$lh-3);
+    }
+}
+    .col-3{
+        width: 20%;
+    }
+}

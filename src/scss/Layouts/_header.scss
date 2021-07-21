@@ -1,0 +1,43 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  .header {
+    padding-top: $pd-5 + 3;
+    display: flex;
+    align-items: center;
+    &__logo {
+      display: block;
+      margin-right: $mr-10;
+    }
+    &__menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+    }
+    &__menu--item:not(:first-child) {
+      margin-left: $mr-7;
+    }
+    &__menu--link {
+      color: $gray-dark;
+      &:hover {
+        color: $primary-color;
+        transition: all 0.1s;
+      }
+    }
+    &__buttons {
+      margin-left: auto;
+    }
+    .no-border {
+      border: none;
+      color: $gray-dark;
+    }
+  }
+}
+
+// @include reponsive("extra-large") {
+//   .header {
+//     a {
+//       margin-right: $mr-9;
+//     }
+//   }
+// }

@@ -1,0 +1,13 @@
+.intro {
+  margin-bottom: 50px;
+  &__description {
+    display: inline-block;
+    @include styleText($gray, $font-size-html, $font-weight-300, $lh-2);
+    margin-top: $mr-2;
+    margin-bottom: $mr-3;
+  }
+  &__img {
+    transform: translateX(15%) translateY(5%);
+    max-width: 120%;
+  }
+}

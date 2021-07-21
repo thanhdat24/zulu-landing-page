@@ -1,0 +1,46 @@
+.text {
+  align-items: center;
+  text-align: center;
+  &__caption {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: $mr-4;
+    padding: 0 $pd-1 - 5;
+    position: relative;
+  }
+  &__caption::before {
+    left: 0;
+    transform: translateX(-100%) translateY(-50%);
+  }
+  &__caption::after {
+    right: 0;
+    transform: translateX(100%) translateY(-50%);
+  }
+
+  &__caption::before,
+  &__caption::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: $primary-color;
+    top: 50%;
+  }
+  &__caption--left {
+    padding-left: $pd-5;
+    margin-bottom: $mr-2;
+  }
+  &__caption--left::after {
+    display: none;
+  }
+  &__caption--left::before {
+    transform: none;
+  }
+  &__heading {
+    @include styleText($gray-dark, $fs-6, $font-weight-bold, $lh-1);
+    margin-bottom: $mr-1;
+    span {
+      display: block;
+    }
+  }
+}

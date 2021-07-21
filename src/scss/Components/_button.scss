@@ -1,0 +1,35 @@
+.button--white {
+  display: inline-block;
+  @include styleButton(
+    $gray-blur,
+    $color-white,
+    $gray-blur,
+    $border-radius,
+    $font-size-html,
+    $font-weight-normal,
+    $line-height-normal,
+    $pd-2,
+    $pd-6
+  );
+  &:focus {
+    outline: none;
+  }
+}
+
+.button--blue {
+  display: inline-block;
+  @include styleButton(
+    $color-white,
+    $primary-color,
+    $primary-color,
+    $border-radius,
+    $font-size-html,
+    $font-weight-normal,
+    $line-height-normal,
+    $pd-2,
+    $pd-6
+  );
+  &:focus {
+    outline: none;
+  }
+}

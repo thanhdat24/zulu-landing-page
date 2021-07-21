@@ -1,0 +1,46 @@
+.clients{
+    padding: $pd-9 0;
+    .col-4{
+        padding: 0 $pd-3 ;
+    }    
+    .clients__content{
+     @include boderText($pd-2,$pd-3,$gray-blur,$border-radius);
+    &:hover{
+        border-color: transparent;
+        box-shadow: 0 0 50px 10px rgba(black, 0.03);
+    }
+    text-align: center;
+    .clients__info{
+        padding-bottom: $pd-3;
+         border-bottom: 1px solid $gray-blur;
+        .clients__img{
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .clients__name{
+            padding-top: $pd-1 ;
+            @include styleText($gray-dark,$fs-4,$font-weight-600,$lh-1);
+        }
+        .clients__job{
+            @include styleText($gray,none,none,none);
+           
+        }
+    }
+    .clients__feedbacks--content{
+        padding-top: $pd-4;
+        @include styleText($gray,none,none,$lh-2);
+    }    
+    .clients__feedbacks--star{
+        
+         @include styleText($yellow,$fs-4,none,none);
+        }
+    }
+
+    .clients__navigate{
+         text-align: center;
+          margin-top: $mr-6;  
+         .clients__navigate--1{                   
+            margin-right: $mr-1;
+        }
+    }
+}

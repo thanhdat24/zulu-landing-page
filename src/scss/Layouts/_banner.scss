@@ -1,0 +1,35 @@
+.banner {
+  display: flex;
+  align-items: center;
+  padding-top: $pd-7;
+  .container {
+    max-width: 1170px;
+    padding: 0 $pd-1;
+    margin: 0 auto;
+  }
+  &__title {
+    @include styleText($gray-dark, $fs-7, $font-weight-bold, $lh-1);
+    margin-bottom: $mr-4;
+    span {
+      display: block;
+    }
+  }
+  &__description {
+    @include styleText($gray, $font-size-html, $font-weight-300, $lh-2);
+    margin-bottom: $mr-5;
+  }
+  &__buttons {
+    .button--started {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .button--works {
+      margin-left: $mr-1;
+      border: 1px solid #a5b2c3;
+      color: $gray-blur;
+    }
+  }
+  &__thumbnail {
+    transform: translate($trf, $trf);
+  }
+}
